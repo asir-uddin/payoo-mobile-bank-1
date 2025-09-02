@@ -24,3 +24,17 @@ document.getElementById('btn-add-money').addEventListener('click', function(e){
     document.getElementById('available-balance').innerText= totalAvailableBalance;
     
 })
+
+
+// toggling feature
+document.getElementById('add-money-card').addEventListener('click',function(){
+    document.getElementById('cash-out-prom').style.display = 'none'
+
+    document.getElementById('add-money-prom').style.display = 'block'
+})
+
+document.getElementById('cash-out-card').addEventListener('click', function(){
+    document.getElementById('add-money-prom').style.display = 'none'
+
+    document.getElementById('cash-out-prom').style.display = 'block'
+})
